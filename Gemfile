@@ -35,3 +35,11 @@ group :development, :test do
   gem 'spring'
 end
 
+group :test, :development do
+  gem "minitest"
+  gem 'rspec-rails', '~> 3.0'
+end
+
+group :test do
+  gem 'capybara', '~> 2.4.4'
+end
