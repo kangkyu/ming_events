@@ -1,4 +1,4 @@
-%h1 Events
+%h1= pluralize(@events.count, 'Event')
 
 %ul
   - @events.each do |event|
