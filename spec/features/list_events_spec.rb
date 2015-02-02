@@ -2,19 +2,19 @@ require 'rails_helper'
 
 describe "Viewing the list of events" do
   before do
-    @event1 = Event.create(event_name: "Iron Man",
+    @event1 = Event.create(event_name: "Coffee Conference",
                           venue: "Los Angeles",
-                          description: "Tony Stark builds an armored suit to fight the throes of evil",
+                          description: "Local Roasters bring out and make cups of coffee over and over",
                           date: "2018-05-02")
 
-    @event2 = Event.create(event_name: "Superman",
+    @event2 = Event.create(event_name: "Movie Night",
                           venue: "Burbank",
-                          description: "Clark Kent grows up to be the greatest super-hero",
+                          description: "Come and Watch three movies with price of one movie",
                           date: "2015-12-15")
 
-    @event3 = Event.create(event_name: "Spider-Man",
-                          venue: "Los Angeles",
-                          description: "Peter Parker gets bit by a genetically modified spider",
+    @event3 = Event.create(event_name: "Eating Spree",
+                          venue: "Chinatown Los Angeles",
+                          description: "A Hundred Food trucks make a Huge Traffic",
                           date: "2016-05-03")
   end
 
@@ -30,12 +30,6 @@ describe "Viewing the list of events" do
     expect(page).to have_text(@event1.venue)
     expect(page).to have_text(@event1.description[0..17])
     expect(page).to have_text(@event1.date)
-  end
-
-  it "opens each event page through event name link" do
-    visit events_url
-    click_link @event1.event_name
-    expect(page).to have_text(@event1.event_name)
   end
 end
 

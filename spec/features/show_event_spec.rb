@@ -2,9 +2,9 @@ require 'rails_helper'
 
 describe "Viewing an individual event" do
   before do
-    @event1 = Event.create(event_name: "Iron Man",
+    @event1 = Event.create(event_name: "Coffee Conference",
                           venue: "Los Angeles",
-                          description: "Tony Stark builds an armored suit to fight the throes of evil",
+                          description: "Local Roasters bring out and make cups of coffee over and over",
                           date: "2018-05-02")
   end
 
