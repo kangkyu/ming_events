@@ -1,9 +1,17 @@
 %h1= pluralize(@events.count, 'Event')
 
 - @events.each do |event|
-  %ul.well
-    %li= link_to event.event_name, event_path(event)
-    %li= truncate(event.description)
-    %li= event.venue
-    %li= event.date
+  %div
+    %header
+      %h2= link_to event.event_name, event_path(event)
+
+    %p= truncate(event.description)
+
+    %table
+      %tr
+        %th When:
+        %td= event.date
+      %tr
+        %th Where:
+        %td= event.venue
 
