@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :tasks
+
   get '/events', to: 'events#index'
   get '/event/:id', to: 'events#show', as: 'event'
   root 'events#index'

@@ -8,4 +8,7 @@
     = csrf_meta_tags
   %body
     .container
+      .text-right
+        = link_to "EVENTS", events_path, class: 'btn btn-lg btn-link'
+        = link_to "TASKS", tasks_path, class: 'btn btn-lg btn-link'
       = yield
