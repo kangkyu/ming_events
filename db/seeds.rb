@@ -25,3 +25,15 @@ events = Event.create!([
     date: "2016-05-03",
     description: "A Hundred Food trucks make a Huge Traffic"
   }])
+
+Task.create!([
+  {
+    title: "call everyone",
+    description: "you don't have to do that.
+
+    simply announce it on the web page. And email everyone."
+  },
+  {
+    title: "reserve location",
+    description: "at least, 2 weeks earlier. Set reminder!"
+  }])

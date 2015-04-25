@@ -1,1 +1,6 @@
 %h1 All Tasks
+
+- @tasks.each do |task|
+  = task.title
+  = task.description
+  / = task.event.event_name
