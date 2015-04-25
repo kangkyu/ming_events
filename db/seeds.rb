@@ -31,9 +31,11 @@ Task.create!([
     title: "call everyone",
     description: "you don't have to do that.
 
-    simply announce it on the web page. And email everyone."
+    simply announce it on the web page. And email everyone.",
+    event: events.first
   },
   {
     title: "reserve location",
-    description: "at least, 2 weeks earlier. Set reminder!"
+    description: "at least, 2 weeks earlier. Set reminder!",
+    event: events.first
   }])
