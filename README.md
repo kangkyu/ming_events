@@ -1,6 +1,5 @@
+:smile:
 
-This app should be hybrid of events + tasks
+This app shall be hybrid of events + tasks
 
-```
-cd ~/old_dir/Wednesday/Ming_events
-```
+[![Stories in Ready](https://badge.waffle.io/kangkyu/ming_events.svg?label=ready&title=Ready)](http://waffle.io/kangkyu/ming_events)
