@@ -31,6 +31,36 @@ describe "Viewing the list of events", type: :feature do
     expect(page).to have_text(@event1.description[0..17])
     expect(page).to have_text(@event1.date)
   end
+
+  it "redirect to event detail page" do
+    visit events_url
+    click_on "#{@event1.event_name}"
+
+    expect(current_path).to eq(event_path(@event1))
+    expect(page).to have_text(@event1.description)
+  end
+
+  it "has its tasks on the detail page" do
+    visit event_url(@event1)
+
+    Task.create!([
+      {
+        title: "call everyone",
+        description: "you don't have to do that.
+
+        simply announce it on the web page. And email everyone.",
+        event_id: @event1
+      },
+      {
+        title: "reserve location",
+        description: "at least, 2 weeks earlier. Set reminder!",
+        event_id: @event1
+      }])
+
+    @event1.tasks.each do |task|
+      expect(page).to have_text(task.title)
+    end
+  end
 end
 
 
