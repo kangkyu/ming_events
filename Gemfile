@@ -35,6 +35,13 @@ group :development, :test do
   gem 'spring'
 end
 
+
+
+
+group :development do
+  gem 'guard-rspec', require: false
+end
+
 group :test, :development do
   gem "minitest"
   gem 'rspec-rails', '~> 3.0'

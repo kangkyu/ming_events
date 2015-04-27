@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Viewing the list of events" do
+describe "Viewing the list of events", type: :feature do
   before do
     @event1 = Event.create(event_name: "Coffee Conference",
                           venue: "Los Angeles",
