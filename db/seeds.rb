@@ -38,4 +38,9 @@ Task.create!([
     title: "reserve location",
     description: "at least, 2 weeks earlier. Set reminder!",
     event: events.first
+  },
+  {
+    title: "find any sponsor",
+    description: "as soon as possible!",
+    event: events[1]
   }])
