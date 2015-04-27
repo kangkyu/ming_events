@@ -14,4 +14,6 @@
       %tr
         %th Where:
         %td= event.venue
-
+      %tr
+        %th Tasks?
+        %td= pluralize(event.tasks.size, 'Task')
