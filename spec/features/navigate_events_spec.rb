@@ -9,7 +9,7 @@ describe "Event navigation" do
                           date: "2018-05-02")
 
     visit event_url(event)
-    click_link "All Events"
+    click_link "EVENTS"
     expect(current_path).to eq(events_path)
   end
 
