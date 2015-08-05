@@ -59,5 +59,4 @@ RSpec.describe EventsController, :type => :controller do
   #   it "destroys the requested event"
   #   it "redirects to the events list"
   # end
-
 end

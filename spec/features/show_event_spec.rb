@@ -16,5 +16,4 @@ describe "Viewing an individual event" do
     expect(page).to have_text(@event1.description)
     expect(page).to have_text(@event1.date)
   end
-
 end

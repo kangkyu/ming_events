@@ -62,5 +62,3 @@ describe "Viewing the list of events", type: :feature do
     end
   end
 end
-
-
