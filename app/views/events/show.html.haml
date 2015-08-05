@@ -16,7 +16,7 @@
 - @event.tasks.each do |task|
   %p
     title:
-    = task.title
+    = link_to task.title, task_path(task)
     %br
     description:
     = task.description

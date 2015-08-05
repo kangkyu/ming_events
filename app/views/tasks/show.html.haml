@@ -1,0 +1,10 @@
+%div
+  %p
+    %br
+    = 'Event: ' + @task.event.event_name
+  %header
+    %h1= @task.title
+
+  %p= @task.description
+  %p= 'added ' + time_ago_in_words(@task.created_at) + ' ago'
+  = link_to 'completed?', '#'
