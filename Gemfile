@@ -16,10 +16,10 @@ group :test, :development do
 end
 
 group :test do
-  gem 'capybara', '~> 2.4.4'
+  gem 'capybara', '~> 2.18.0'
 end
 
-gem "haml-rails", "~> 0.8"
+gem "haml-rails", "~> 1.0"
 gem 'bootstrap-sass', '~> 3.4.1'
 
 
