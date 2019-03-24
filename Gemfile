@@ -4,7 +4,7 @@ ruby '2.3.8'
 gem 'rails', '4.2.11.1'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.0'
 
 group :development do
   gem 'guard-rspec', require: false
@@ -20,7 +20,7 @@ group :test do
 end
 
 gem "haml-rails", "~> 0.8"
-gem 'bootstrap-sass', '~> 3.3.3'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 
 
