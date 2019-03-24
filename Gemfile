@@ -12,7 +12,7 @@ end
 
 group :test, :development do
   gem "minitest"
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.6'
 end
 
 group :test do
