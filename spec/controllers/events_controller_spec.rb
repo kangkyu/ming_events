@@ -24,7 +24,7 @@ RSpec.describe EventsController, :type => :controller do
         description: "Local Roasters bring out and make cups of coffee over and over",
         date: "2018-05-02"
       )
-      get :show, id: @event
+      get :show, params: { id: @event }
       expect(response).to render_template('show')
     end
   end
