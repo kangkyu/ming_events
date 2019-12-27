@@ -9,7 +9,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.21' # upgrade to 1.0 after rails 5.1.5
   gem 'rails_12factor'
 end
 
